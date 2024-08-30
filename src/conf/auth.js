@@ -42,9 +42,8 @@ export class Authservice{
         try {
             return await this.account.get();
         } catch (error) {
-            console;log("Appwrite service ::getCurrentUser::error",error);
+            console.log("Appwrite service ::getCurrentUser::error",error);
         }
-
         return null;
     }
 
@@ -52,7 +51,7 @@ export class Authservice{
        try {
         return await this.account.deleteSessions();
        } catch (error) {
-        console;log("Appwrite service ::getCurrentUser::error",error);
+        console.log("Appwrite service ::getCurrentUser::error",error);
        }
     }
 }
@@ -60,5 +59,5 @@ export class Authservice{
 
 
 
-const Authservice = new Authservice();
-export default Authservice;
+const authservice = new Authservice();
+export default authservice;
